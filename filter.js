@@ -6,7 +6,6 @@ var timer = setInterval(function() {
 	nodeList.forEach(function(node) {
 		if (node != null) { // equivalent to: typeof(node) !== "undefined" && node !== null
 			var year = node.querySelector("p.year");
-			// div > div.cover-overlay.cover-info-overlay > div > div.rating-value
 			var rating = node.querySelector("div.rating-value");
 			if (year != null && year.innerText < 2018) {
 				if (node.parentNode != null) {
