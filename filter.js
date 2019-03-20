@@ -10,13 +10,21 @@ var timer = setInterval(function() {
 			var year = node.querySelector("p.year");
 			var rating = node.querySelector("div.rating-value");
 			if (year != null && year.innerText < yearMin) {
+				node.style.display = 'none';
+				/*
 				if (node.parentNode != null) {
 					node.parentNode.removeChild(node);
 				}
+				*/
 			} else if (rating != null && rating.innerText[0] < ratingMin) {
+				node.style.display = 'none';
+				/*
 				if (node.parentNode != null) {
 					node.parentNode.removeChild(node);
 				}
+				*/
+			} else {
+				node.style.display = undefined;
 			}
 		}
 	});
