@@ -24,7 +24,7 @@ var timer = setInterval(function() {
 				}
 				*/
 			} else {
-				node.style.display = undefined;
+				node.style.display = 'block';
 			}
 		}
 	});
